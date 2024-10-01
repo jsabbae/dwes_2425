@@ -10,49 +10,31 @@
 // Concatenar valor entero con cadena
 // Sumar valor entero con valor booleano
 
-$v1 = 3;
-$v2 = "10 poemas de amor y una canción desesperada";
-$v3 = 3.64;
-$v4 = " poemas de amor y una canción desesperada";
-$v5 = false;
-
-var_dump($v1 * $v2);
 
 
+
+$integer = 5;
+$string = "10 poemas de amor y una canción desesperada";
+$float = 3.14;
+$boolean = true;
+
+
+$result1 = $integer * $string;
+var_dump($result1);
 echo "<br>";
 
-var_dump($v1 + $v2);
-
+$result2 = $integer + $string;
+var_dump($result2);
 echo "<br>";
 
-var_dump($v1 + $v3);
-
+$result3 = $integer + $float;
+var_dump($result3);
 echo "<br>";
 
-var_dump($v1 + $v4);
-
+$result4 = $integer . $string;
+var_dump($result4);
 echo "<br>";
 
-var_dump($v1 + $v5);
-
-echo "<br>";
-
-// Ejercicio 2. is_null().
-
-// Crear un script PHP donde se muestre el resultado de 3 valores verdaderos y tres valores falsos para la función is_null()
-
-$var6 = true;
-$var7 = true;
-$var8 = true;
-$var9 = false;
-$var10 = false;
-$var11 = false;
-
-// Ejercicio 3. issetl().
-
-// Crear un script PHP donde se muestre el resultado de 3 valores verdaderos y tres valores falsos para la función isset()
-
-
-// Ejercicio 4. empty().
-
-// Crear un script PHP donde se muestre el resultado de 3 valores verdaderos y tres valores falsos para la función empty()
+$result5 = $integer + $boolean;
+var_dump($result5);
+?>
