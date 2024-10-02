@@ -1,6 +1,6 @@
 <?php
     // Cargo el model
-    include "models/potencia.php";
+    include "models/exponencial.php";
 
     // Cargo la vista
     include "views/resultado.php"
