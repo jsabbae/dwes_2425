@@ -31,9 +31,13 @@ Uso vistas
             <li class="nav-item">
                 <a class="nav-link" href="#">Link</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" <?= ($perfil != "Admin") ? 'disabled' : null ?> href="#">Admin</a>
-            </li>
+            <!-- Generación dinámica enlace Admin -->
+            <?php if ($perfil = "Admin"): ?>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Admin</a>
+                </li>
+            <?php endif; ?>
         </ul>
 
 
