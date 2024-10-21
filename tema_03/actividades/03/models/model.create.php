@@ -1,0 +1,40 @@
+<?php
+
+/*
+
+    Modelo:  model.create.php
+    Descripción: añade un nuevo libros a la taba
+
+    Método POST:
+        - id
+        - titulo
+        - autor
+        - editorial
+        - genero
+        - precio
+*/
+
+# Extraemos los valores del formulario
+$id = $_POST['id'];
+$titulo= $_POST['titulo'];
+$autor = $_POST['autor'];
+$genero = $_POST['genero'];
+$precio = $_POST['precio'];
+
+# Cargar tabla libros
+$libros = get_tabla_libros();
+
+# Creo un array asociativo con los detalles del nuevo alumno
+$registro = [
+    'id' => $id,
+    'titulo' => $titulo,
+    'autor' => $autor,
+    'genero'=> $genero,
+    'precio' => $precio
+];
+
+# Añadir nuevo libro a la tabla
+$libros[] = $registro;
+
+// array_push($libros, $registro);
+
